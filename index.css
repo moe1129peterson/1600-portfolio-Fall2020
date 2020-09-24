@@ -1,6 +1,27 @@
-nav{
-    background-color: palevioletred;
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-#Welcome-section {
-    background-color: peachpuff;
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: pink;
+}
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+ul {
+    display: flex;
+}
+li {
+    listy-style-typ: none;
+}
+#welcome-section{
+    background-color: antiquewhite;
 }

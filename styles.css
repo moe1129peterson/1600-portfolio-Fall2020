@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: peachpuff;
+}
+ul {
+    display: flex;
+    justify-content: end;
+    border: 1px solid blue;
+}
+li {
+    listy-style-typ: none;
+}
+#welcome-section{
+    background-color: antiquewhite;
+}
