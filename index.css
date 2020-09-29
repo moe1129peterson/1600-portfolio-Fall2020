@@ -25,3 +25,10 @@ li {
 #welcome-section{
     background-color: antiquewhite;
 }
+.project-section {
+    text-align ;
+}
+.projects-grid {
+    display: grid;
+
+}
