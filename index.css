@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: flex-end;
     background-color: #833d3f;
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -46,6 +46,9 @@ body {
     margin-right: 2rem;
 }
 
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
 #welcome-section {
   
   display: flex;
@@ -55,17 +58,33 @@ body {
   width: 100%;
   height: 100vh;
     color: #fff;
+    animation: .3s
+    fadein 1s forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
     background-image: linear-gradient(135deg, #203C54 0%, #27292c 100%);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
+    
 }
+@keyframes fadein {
+  from {
+     bottom: 15px;
+  }
+  to {
+     bottom: 1px;
+     opacity: 1;
+  }   
+  
+}
+
 .main {
   display: block;
   width: 800px;
   height: 200px;
   color: #eee;
   font-size: 68px;
-  font-family: arial;
   font-weight: bold;
   margin: auto;
   position: relative;
@@ -74,6 +93,8 @@ body {
 
 .projects-section {
     text-align: center;
+    font-size: large;
+    color: #eee;
     padding: 15rem 2rem;
     background: #1E434C; 
 }
@@ -97,7 +118,6 @@ body {
 
   .project-title {
     font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
 
