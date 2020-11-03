@@ -2,6 +2,8 @@ import { people } from '../data/people.js'
 
 const mainContent = document.querySelector('#main')
 
+populateDOM(people)
+
 const mainHeader = document.createElement('header')
 mainHeader.className = 'mainHeader'
 document.body.insertBefore(mainHeader, mainContent)
