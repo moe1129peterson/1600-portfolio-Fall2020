@@ -3,16 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Star Wars Films</title>
   </head>
   <body>
     <header>
-        <h1 class="main_title">Star Wars API Practice</h1>
+        <h1 class="main_title">Star Wars Films</h1>
     </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="/star-wars-api/index.html">Home</a></li>
+        <li class="active"><a href="/star-wars-films/index.html">Star Wars Films</a></li>
+        <li><a href="/star-wars-characters/index.html">Star Wars Characters</a></li>
+      </ul>
+      <div id="btns">
+        <!--Buttons go here don't you know-->
+      </div>
+    </nav>
+    <!-- <div class="btn-container">
+      <button class="btn-main" id="orgTri" onclick="callThisThingy(this)">Original Trilogy</button>
+      <button class="btn-main" id="allMov" onclick="callThisThingy(this)">All Films</button>
+    </div> -->
+    <!-- <div id="list-container">
+      <ul id="list">
+      </ul>
+    </div> -->
     <main>
-
+      <section id="cards">
+        <!--Naughty pictures go here-->
+        <div id="content">
+          
+        </div>
+      </section>
     </main>
-    <script src="main.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="./btn.js" type="module"></script>
   </body>
 </html>

@@ -29,7 +29,7 @@ loadButton.addEventListener('click', () => {
     loadButton.disabled = true
 })
 
-mudsDaleButton.addEventListener('click', () => {
+/* mudsDaleButton.addEventListener('click', () => {
     getAPIData(`https://pokeapi.co/api/v2/pokemon/750`).then
         (async (data) => {
             let mudMoves = document.createElement('ul')
@@ -44,7 +44,7 @@ mudsDaleButton.addEventListener('click', () => {
             pokemonGrid.appendChild(mudMoves)
             pokemonGrid.appendChild(mudImage)
     })
-})
+}) */
 
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
@@ -90,4 +90,13 @@ function getImageFileName(pokemon) {
     }
 }
 
-function Pokemon(nam)
+function Pokemon(name, height, weight, abilities) {
+    this.name = name
+    this.height = height
+    this.weight = weight
+    this.abilities = abilities
+    this.id = 900
+}
+
+let thoremon = new Pokemon('Thoremon', 450, 200, ['gorge', 'sleep'])
+console.log(thoremon)

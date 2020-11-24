@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -7,12 +8,59 @@
     display: flex;
     justify-content: space-around;
     margin: 1rem;
+    background-color: black;
 }
+
+header {
+    background-color: black;
+    color: yellow;
+}
+
+/* --- NAVIGATION --- */
+
+nav {
+    background-color: #555;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+}
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li {
+    float:left;
+
+}
+
+nav ul.menu li a {
+    display: flexbox;
+    padding: .5rem 1.5rem;
+    color: yellow;
+    background-color: black;
+    text-decoration: none;
+    border-right: solid 1px yellow;
+
+}
+
+nav ul.menu li a:hover {
+    background-color: yellow;
+    color: #000;
+}
+
+nav ul.menu li.active {
+    background-color: #d7283a;
+}
+
+/* --- MAIN --- */
 
 #main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: slategray;
 }
 
 figure {
@@ -22,3 +70,4 @@ figure {
 figure img {
     max-height: 12rem;
 }
+
