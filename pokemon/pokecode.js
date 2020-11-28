@@ -98,5 +98,5 @@ function Pokemon(name, height, weight, abilities) {
     this.id = 900
 }
 
-let momo = new Pokemon('MoMo', 450, 200, ['gorge', 'sleep'])
+let momo = new Pokemon('MoMo', 450, 200, ['snack', 'snuggle'])
 console.log(momo)
