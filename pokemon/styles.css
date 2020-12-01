@@ -51,6 +51,7 @@ header h1 {
   
   .card__face--back {
     background: #FFCB05;
+    color: #eee;
     transform: rotateY(180deg);
   }
 
