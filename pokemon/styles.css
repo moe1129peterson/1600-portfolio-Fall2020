@@ -36,6 +36,8 @@ header h1 {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .card__face {
@@ -47,6 +49,7 @@ header h1 {
 
   .card__face--front {
     background: #3D7DCA;
+    padding: 12px;
   }
   
   .card__face--back {
