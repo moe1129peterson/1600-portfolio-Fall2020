@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header>
+        <h1 id="title">My survey form</h1>
+    </header>
+  <p id="description">Give some feedback about this page</p>
+  <p style="text-align: center;"><b>Note</b>: Fields with a <span style="color: red;">*</span> are required Fields.</p>
+
+  <div class="wrapper">
+    <form id="survey-form" action="index.html" method="post">
+      <div class="row">
+        <div class="col-25">
+          <label for="name" id="name-label">Name: <span style="color: red;">*</span> : </label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="name" id="name" placeholder="jane doe" required> 
+        </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email" id="email-label">Email: <span style="color: red;">*</span> : </label>
+        </div>
+        <div class="col-75">
+          <input type="email" name="email" id="email" placeholder="example@mail.com" required> 
+        </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="number" id="number-label">Experience: </label>
+        </div>
+        <div class="col-75">
+          <input type="number" name="number" min="18" max="50" id="number" placeholder="23"> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+      <label for="dropdown">Profession: </label>
+        </div>
+        <div class="col-75">
+          <select name="job position" id="dropdown">
+            <option value="front end developer">front end developer</option>
+            <option value="back end developer">back end developer</option>
+            <option value="full stack developer">full stack developer</option>
+            <option value="graphic designer">graphic designer</option>
+          </select> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <p class="inlineP">Gender: </p>
+        </div>
+        <div class="col-75">
+          <label for="male"><input type="radio" name="gender" value="male" id="male"> male</label>
+          <label for="female"><input type="radio" name="gender" value="female" id="female"> female</label> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <p class="inlineP">Skills: </p>
+        </div>
+        <div class="col-75">
+          <label for="html"><input type="checkbox" value="HTML" id="html" name="skill"> HTML</label> 
+          <label for="css"><input type="checkbox" value="css" id="css" name="skill"> CSS</label> 
+          <label for="javascript"><input type="checkbox" value="javascript" id="javascript" name="skill"> Javascript</label> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="message">Message: </label>
+        </div>
+        <div class="col-75">
+          <textarea name="message" rows="8" cols="20" id="message"></textarea> 
+        </div>
+      </div>
+
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </div>
+</body>
+</html>
