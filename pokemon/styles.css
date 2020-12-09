@@ -51,6 +51,10 @@ header h1 {
     background: #3D7DCA;
     padding: 12px;
   }
+
+  .card__face--front img {
+    width: 100%;
+  }
   
   .card__face--back {
     background: #FFCB05;
