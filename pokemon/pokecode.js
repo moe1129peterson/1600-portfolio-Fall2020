@@ -128,5 +128,5 @@ function Pokemon(name, height, weight, abilities) {
     this.id = 900
 }
 
-let drewmon = new Pokemon('Drewmon', 450, 200, ['chill', 'game'])
+let momomon = new Pokemon('MoMomon', 450, 200, ['nap', 'snack'])
 //console.log(drewmon)
