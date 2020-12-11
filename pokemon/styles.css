@@ -35,9 +35,12 @@ header h1 {
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; If things are too big for container hides it*/
+    /* backface-visibility: hidden; */
+    /* transform: rotateY(180deg); */
+
   }
 
   .card__face {
@@ -45,11 +48,22 @@ header h1 {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    
   }
 
   .card__face--front {
-    background: #3D7DCA;
-    padding: 12px;
+    background: #d6b01e;
+    background-image: url(/images/pokemon/frontofpokemoncard.png);
+    background-repeat: no-repeat;
+    background-size: 200px, 260px;
+    
+    font-family: pokemon;
+    color: #eee;
+    
+    /* filter: opacity(0%); */
+    /* transform: rotateY(180deg); */
+
+    /* backface-visibility: hidden; */
   }
 
   .card__face--front img {
@@ -57,9 +71,14 @@ header h1 {
   }
   
   .card__face--back {
-    background: #FFCB05;
+    /* backface-visibility: hidden; */
+    background-image: url(/images/pokemon/yugiohback.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px, 260px;
+    font-family: pokemon;
     color: #eee;
     transform: rotateY(180deg);
+    background-color: #3D7DCA;
   }
 
   .card.is-flipped {
