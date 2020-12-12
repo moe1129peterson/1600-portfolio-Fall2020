@@ -1,0 +1,342 @@
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* box model fix here */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* --- BODY --- */
+body {
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    color: #333333;
+    background-color: #f27d42;
+    background-image: url(images/background.gif);
+    background-repeat: repeat-x;
+    font-size: 16px;
+    
+}
+
+
+/* --- IFRAME --- */
+.testiframe {
+    width: 96%;
+    height: 20rem;
+    border: none;
+}
+
+
+/* --- WRAPPER --- */
+
+div#wrapper {max-width: 960px; margin: 0 auto;
+    box-shadow: 5px 5px 25px rgba(0,0,0,.5);
+
+}
+
+
+/* --- HEADER --- */
+header {
+    background-color: #102548;
+    text-align: center;
+    background-image: url(images/5.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100px;
+    
+
+}
+
+header h1 {
+    color: #f27d42;
+    padding: 1rem 0 0 2%;
+    font-size: 2rem;
+}
+
+header h2 {
+    color: #f3f3f3;
+    padding-left: 3%;
+    font-size: .60rem;
+    letter-spacing: 5px;
+}
+
+header h3 {
+    color: #102548;
+    padding-left: .5%;
+    font-size: .86rem;
+    letter-spacing: 1px;
+}
+
+/* --- NAVIGATION --- */
+
+/*Phone nav rules here */
+@media only screen and (max-width: 600px) {
+    nav {background-color: #102548;
+        padding: .5rem 2%;
+    
+    }
+
+    nav ul.menu {
+
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul.menu li a {
+        border: solid 1px #f3f3f3;
+        display: block;
+        padding: .5rem 2%;
+        text-align: center;
+        background: linear-gradient(#102548, #283b5c);
+        margin-bottom: .5rem;
+        border-radius: 30px;
+        color: #f3f3f3;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    nav ul.menu li.active a {
+        background-color: #f27d42;
+    }
+
+    nav ul.menu li a:hover {
+        background-color: #c8eff9;
+}
+}
+
+/*End of phone */
+
+
+/*Desktop nav rules here */
+@media only screen and (min-width: 601px) {
+    nav {
+        background: linear-gradient(to top, #102548 0%, #283b5c 100%);
+        border-top: solid 1px #000;
+        border-bottom: solid 1px #000;
+    
+    }
+    nav ul.menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul.menu li {
+        float: left;
+    
+    }
+    
+    nav ul.menu li a {
+        display: block;
+        padding: .5rem 1.5rem;
+        color: #f3f3f3;
+        text-decoration: none;
+        border-right: solid 1px #f3f3f3;
+    
+    }
+    
+    nav ul.menu li a:hover {
+        background-color: #c8eff9;
+        color: #000;
+    }
+    
+    nav ul.menu li.active {
+        background-color: #f27d42;
+    }
+
+}
+
+
+
+/*End of desktop */
+
+
+/* --- MAIN --- */
+main {
+    padding: .5rem 2%;
+    background: linear-gradient(#57568e, #f39a6e);
+    
+
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #102548;
+    border-bottom: 1px solid #102548;
+    margin-bottom: .4rem;
+    
+}
+
+main div.myGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+main h2 {
+    font-size: 2rem;
+    color: #102548;
+    margin-bottom: .2rem;
+}
+
+main p {
+    padding-bottom: .8rem;
+    line-height: 150%;
+}
+
+main blockquote {
+    font-style: italic;
+    margin: .4rem 2%;
+    font-size: .9rem;
+}
+
+main a {
+    color: #424a9f;
+}
+
+main a:hover {
+    color: #55bdca;
+}
+
+/* --- LISTS --- */
+main ul.check, main ol.bulb {
+    margin: 0 0 .8rem 0;
+    padding: 0 0 0 1rem;
+}
+
+main ul.check {
+    list-style-image: url(images/Airplane-icon.png);
+}
+
+main ol.bulb li {
+    background-image: url(images/Airplane-icon.png);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    padding-left: 20px;
+
+}
+
+main dl dt {
+    margin: 0;
+    font-weight: 600;
+    padding: 0 0 0 1rem;
+}
+
+main dl dd {
+    margin: 0;
+    padding: 0 0 .75rem 2rem;
+}
+
+
+/* ---  FORM STYLING --- */
+
+form.memberform fieldset {
+    border: 1px solid #050;
+    border-radius: 1rem;
+    padding: 1rem 2%;
+
+}
+
+form.memberform legend {
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+    form.memberform label {
+        display: block;
+
+    }
+    form.memberform span {
+        display: block;
+        padding-top: 1rem;
+        color: #102548;
+        font-size: .8rem;
+
+    }
+    
+    form.memberform .myinput {
+        color: #102548;
+        background-color: beige;
+        border: none;
+        padding: .5rem;
+        border-radius: 1rem;
+        width: 25%;
+    }
+
+    form.memberform .membershipbutton {
+        background-color: #f27d42;
+        color: #f3f3f3;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+        border: none;
+        margin-top: 1rem;
+        margin-left: 2%;
+
+    }
+
+    form.memberform .memberoption {
+        display: block;
+        background-color: beige;
+        padding: .5rem 2rem;
+        border-radius: 1rem;
+        border: none;
+        color: #102548;
+
+
+    }
+
+    form.memberform .creditcard {
+        display: block;
+        background-color: beige;
+        padding: .5rem 1.75rem;
+        border-radius: 1rem;
+        border: none;
+        color: #102548;
+
+    }
+
+
+/* --- STYLING IMAGES --- */
+figure.myPhoto {
+    margin: 0 0 0 2%;
+    padding: .5em;
+    float: right;
+    border: 1px solid #102548;
+    width: 40%;
+
+}
+
+figure.myGallery {
+    float: left;
+}
+
+figure.logo {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+figure.myPhoto img {
+    width: 100%;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #102548;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+
+/* --- OTHER --- */
+div.keepOpen {
+    clear: both;
+}

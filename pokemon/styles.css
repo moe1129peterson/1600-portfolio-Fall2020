@@ -2,6 +2,11 @@
 header {
   background-color: #003A70;
 }
+
+/* --- NAV --- */
+
+
+
 header h1 {
   color:#FFCB05;
   padding: 1rem 0 0 2%;
@@ -55,7 +60,8 @@ header h1 {
     background: #d6b01e;
     background-image: url(/images/pokemon/frontofpokemoncard.png);
     background-repeat: no-repeat;
-    background-size: 200px, 260px;
+    background-size: 120%;
+    background-position: center;
     
     font-family: pokemon;
     color: #eee;
