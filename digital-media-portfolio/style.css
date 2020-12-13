@@ -12,7 +12,7 @@ body {
     font-family: 'Signika', sans-serif;
     font-weight: 300;
     color: #333333;
-    background-color: #f27d42;
+    background-color: #cac7c1;
     background-image: url(images/background.gif);
     background-repeat: repeat-x;
     font-size: 16px;
@@ -38,7 +38,7 @@ div#wrapper {max-width: 960px; margin: 0 auto;
 
 /* --- HEADER --- */
 header {
-    background-color: #102548;
+    background-color: #073431;
     text-align: center;
     background-image: url(images/5.png);
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ header {
 }
 
 header h1 {
-    color: #f27d42;
+    color: #cac7c1;
     padding: 1rem 0 0 2%;
     font-size: 2rem;
 }
@@ -62,7 +62,8 @@ header h2 {
 }
 
 header h3 {
-    color: #102548;
+    background-color: #073431;
+    color: #bad9d4;
     padding-left: .5%;
     font-size: .86rem;
     letter-spacing: 1px;
@@ -72,7 +73,7 @@ header h3 {
 
 /*Phone nav rules here */
 @media only screen and (max-width: 600px) {
-    nav {background-color: #102548;
+    nav {background-color: #073431;
         padding: .5rem 2%;
     
     }
@@ -88,7 +89,7 @@ header h3 {
         display: block;
         padding: .5rem 2%;
         text-align: center;
-        background: linear-gradient(#102548, #283b5c);
+        background: linear-gradient(#073431, #85152b);
         margin-bottom: .5rem;
         border-radius: 30px;
         color: #f3f3f3;
@@ -97,7 +98,7 @@ header h3 {
     }
 
     nav ul.menu li.active a {
-        background-color: #f27d42;
+        background-color: #cac7c1;
     }
 
     nav ul.menu li a:hover {
@@ -111,7 +112,7 @@ header h3 {
 /*Desktop nav rules here */
 @media only screen and (min-width: 601px) {
     nav {
-        background: linear-gradient(to top, #102548 0%, #283b5c 100%);
+        background: linear-gradient(to top, #073431 0%, #283b5c 100%);
         border-top: solid 1px #000;
         border-bottom: solid 1px #000;
     
@@ -142,7 +143,7 @@ header h3 {
     }
     
     nav ul.menu li.active {
-        background-color: #f27d42;
+        background-color: #cac7c1;
     }
 
 }
@@ -155,15 +156,15 @@ header h3 {
 /* --- MAIN --- */
 main {
     padding: .5rem 2%;
-    background: linear-gradient(#57568e, #f39a6e);
+    background: linear-gradient(#eacfc4, #cac7c1);
     
 
 }
 
 main h1 {
     font-size: 3rem;
-    color: #102548;
-    border-bottom: 1px solid #102548;
+    color: #073431;
+    border-bottom: 1px solid #073431;
     margin-bottom: .4rem;
     
 }
@@ -176,7 +177,7 @@ main div.myGallery {
 
 main h2 {
     font-size: 2rem;
-    color: #102548;
+    color: #073431;
     margin-bottom: .2rem;
 }
 
@@ -192,7 +193,7 @@ main blockquote {
 }
 
 main a {
-    color: #424a9f;
+    color: #85152b;
 }
 
 main a:hover {
@@ -250,13 +251,13 @@ form.memberform legend {
     form.memberform span {
         display: block;
         padding-top: 1rem;
-        color: #102548;
+        color: #0734318;
         font-size: .8rem;
 
     }
     
     form.memberform .myinput {
-        color: #102548;
+        color:#073431;
         background-color: beige;
         border: none;
         padding: .5rem;
@@ -281,7 +282,7 @@ form.memberform legend {
         padding: .5rem 2rem;
         border-radius: 1rem;
         border: none;
-        color: #102548;
+        color: #073431;
 
 
     }
@@ -292,7 +293,7 @@ form.memberform legend {
         padding: .5rem 1.75rem;
         border-radius: 1rem;
         border: none;
-        color: #102548;
+        color: #073431;
 
     }
 
@@ -302,7 +303,7 @@ figure.myPhoto {
     margin: 0 0 0 2%;
     padding: .5em;
     float: right;
-    border: 1px solid #102548;
+    border: 1px solid #073431;
     width: 28%;
 
 }
@@ -323,12 +324,12 @@ figure.myPhoto img {
 
 /* --- FOOTER --- */
 footer {
-    background-color: #102548;
+    background-color: #073431;
 }
 
 footer p {
     text-align: center;
-    color: white;
+    color: #cac7c1;
     padding: .5rem;
     font-size: .8rem;
     font-weight: 600;
