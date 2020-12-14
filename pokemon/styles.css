@@ -1,17 +1,15 @@
 /* --- HEADER --- */
 header {
-  background-color: #003A70;
+  background-color: #ee1515;
 }
-
-/* --- NAV --- */
-
-
 
 header h1 {
   color:#FFCB05;
   padding: 1rem 0 0 2%;
   font-size: 2rem;
+  text-align: center;
   font-family: "Pokemon";
+  font-size: 100px;
 }
 
 
@@ -20,10 +18,47 @@ header h1 {
     box-sizing: border-box;
 }
 
+/* --- NAVIGATION --- */
+
+nav {
+  background: linear-gradient(to top, #222224 0%, #4c4c50 100%);
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+
+nav ul.menu {
+  list-style-type: none;
+  font-family: "pokemon";
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.menu li a {
+  display: block;
+  padding: .5rem 1.5rem;
+  color:#FFCB05;
+  text-decoration: none;
+  border-right: solid 1px #f3f3f3;
+}
+
+nav ul.menu li a:hover {
+  background-color: #FFCB05;
+  color: #000;
+}
+
+/* --- BODY --- */
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* --- GRID --- */
+
 .pokemonGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #f0f0f0;
 }
 
 .scene {
@@ -48,6 +83,8 @@ header h1 {
 
   }
 
+/* --- CARD FRONT --- */
+
   .card__face {
     position: absolute;
     width: 100%;
@@ -58,11 +95,11 @@ header h1 {
 
   .card__face--front {
     background: #d6b01e;
-    background-image: url(/images/pokemon/frontofpokemoncard.png);
+    background-image: url(/images/pokemon/pokemoncardfront.png);
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 100%;
     background-position: center;
-    
+    text-align: center;
     font-family: pokemon;
     color: #eee;
     
@@ -76,13 +113,17 @@ header h1 {
     width: 100%;
   }
   
+/* --- CARD BACK --- */
+
   .card__face--back {
     /* backface-visibility: hidden; */
-    background-image: url(/images/pokemon/yugiohback.jpg);
+    background-image: url(/images/pokemon/pokemoncardback.png);
     background-repeat: no-repeat;
     background-size: 200px, 260px;
     font-family: pokemon;
-    color: #eee;
+    text-align: center;
+    font-size: 50px;
+    color:red;
     transform: rotateY(180deg);
     background-color: #3D7DCA;
   }
