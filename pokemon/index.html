@@ -13,7 +13,14 @@
     <!-- Start of the header-->
     <header>
         <h1>Pokémon, Gotta Catch 'em All!</h1>
-        <button>Load Pokémon!</button>
+        <button id="popCards">Load Pokémon!</button>
+        <select name="type" id="type">
+            <option value="all">All</option>
+            <!--type options go here-->
+        </select>
+        <select name="limit" id="limit">
+            <!--limit options go here-->
+        </select>
     </header>
 
      <!-- Start of the navigation-->
@@ -32,7 +39,7 @@
     <footer>
 
     </footer>
-    <script src='pokecode.js' type="module"></script>
+    <!-- <script src='pokecode.js' type="module"></script> -->
     <script src='demo.js' type="module"></script>
     <script src="./node_modules/axios/dist/axios.min.js"></script>
 </body>
