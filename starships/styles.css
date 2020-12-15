@@ -16,7 +16,17 @@ img {
     z-index: 1000;
 }
 
-header, footer {
+header {
+    height: 200px;
+    background-color: black;
+    background-image: url(/images/starwarslogo.png);
+    background-position: center;
+    background-size: 450px;
+    background-repeat: no-repeat;
+}
+
+
+footer {
     display: flex;
     justify-content: center;
     font-size: 1.75rem;

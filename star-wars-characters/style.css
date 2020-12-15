@@ -12,8 +12,12 @@
 }
 
 header {
+    height: 200px;
     background-color: black;
-    color: yellow;
+    background-image: url(/images/starwarslogo.png);
+    background-position: center;
+    background-size: 450px;
+    background-repeat: no-repeat;
 }
 
 /* --- NAVIGATION --- */
