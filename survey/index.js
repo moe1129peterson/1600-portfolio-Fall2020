@@ -5,6 +5,8 @@ Survey
     .StylesManager
     .applyTheme("bootstrapmaterial");
 
+const fs = require('fs')
+
 var json = {
     pages: [
         {
@@ -13,14 +15,14 @@ var json = {
 
                 }, {
                     type: "rating",
-                    name: "満足度",
+                    name: "satisfaction",
                     title: "How satisfied are you with this website?",
                     mininumRateDescription: "Not Satisfied",
                     maximumRateDescription: "Completely satisfied"
                 }, {
                     type: "rating",
                     name: "recommend friends",
-                    visibleIf: "{満足度} > 2",
+                    visibleIf: "{satisfaction} > 2",
                     title: "How likely are you to recommend this website to a friend or co-worker?",
                     mininumRateDescription: "Will not recommend",
                     maximumRateDescription: "I will recommend"
@@ -39,6 +41,9 @@ window.survey = new Survey.Model(json);
 survey
     .onComplete
     .add(function (result) {
+        fs.writeFile('./response.txt', result.data, (err) => { 
+            if (err) throw err; 
+        }) 
         document
             .querySelector('#surveyResult')
             .textContent = "This is what you submitted:\n" + JSON.stringify(result.data, null, 3);
