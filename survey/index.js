@@ -5,8 +5,6 @@ Survey
     .StylesManager
     .applyTheme("bootstrapmaterial");
 
-const fs = require('fs')
-
 var json = {
     pages: [
         {
@@ -41,9 +39,6 @@ window.survey = new Survey.Model(json);
 survey
     .onComplete
     .add(function (result) {
-        fs.writeFile('./response.txt', result.data, (err) => { 
-            if (err) throw err; 
-        }) 
         document
             .querySelector('#surveyResult')
             .textContent = "This is what you submitted:\n" + JSON.stringify(result.data, null, 3);
