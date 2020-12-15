@@ -78,8 +78,8 @@ nav ul.menu li a:hover {
 /* --- MAIN --- */
 main {
     padding: .5rem 2%;
-    background-color: lightslategray;
-    color: black;
+    background-color: black;
+    color: yellow;
 }
 
 main h1 {

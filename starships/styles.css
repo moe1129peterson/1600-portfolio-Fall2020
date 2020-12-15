@@ -25,6 +25,43 @@ header {
     background-repeat: no-repeat;
 }
 
+/* --- NAVIGATION --- */
+
+nav {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+  }
+
+  nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul.menu li {
+    
+  }
+
+  nav ul.menu li a {
+    display: flexbox;
+    padding: .5rem 1.5rem;
+    color: yellow;
+    background-color: black;
+    text-decoration: none;
+    border-right: solid 1px yellow;
+  
+  }
+
+  nav ul.menu li a:hover {
+    background-color: yellow;
+    color: #000;
+  }
+
+
+  nav ul.menu li.active {
+    background-color: ;
+  }
+
 
 footer {
     display: flex;
@@ -40,4 +77,5 @@ a {
 
 li {
     list-style-type: none;
+    color: yellow;
 }

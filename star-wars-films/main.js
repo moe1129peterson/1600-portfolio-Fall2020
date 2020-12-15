@@ -1,5 +1,5 @@
 import { films } from '../data/films.js'
-import { getLastNumber } from '../utils/index.js'
+import { getLastNumber, addStarField } from '../utils/index.js'
 console.log(films[0]["title"])
 
 const cards = document.getElementById("cards")
@@ -68,3 +68,5 @@ function CreateButton(text,appendto,onClickMethod,array,amt,className){
   myButton.textContent = text//pass in button text
   btnDiv.appendChild(myButton)//put button in your HTML so it's visible. The method lets you choose where to put it
 };
+
+addStarField(document.querySelector('body'), 1000)
