@@ -1,0 +1,156 @@
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* box model fix here */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* --- BODY --- */
+body {
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    color: #333333;
+    background-color: white;
+    font-size: 16px;
+    
+}
+
+/* --- HEADER --- */
+header {
+    background-color: black;
+
+}
+
+header h1 {
+    color:#FFE81F;
+    padding: 1rem 0 0 2%;
+    font-size: 1.75rem;
+}
+
+header h2 {
+    color: #FFE81F;
+    padding-left: 2%;
+    font-size: .86rem;
+    letter-spacing: 2px;
+}
+
+/* --- NAVIGATION --- */
+
+nav {
+    background-color: black;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+}
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li {
+    float:left;
+
+}
+
+nav ul.menu li a {
+    display: block;
+    padding: .5rem 1.5rem;
+    color: #FFE81F;
+    text-decoration: none;
+    border-right: solid 1px #FFE81F;
+
+}
+
+nav ul.menu li a:hover {
+    background-color: #f3f3f3;
+    color: #000;
+}
+
+
+/* --- MAIN --- */
+main {
+    padding: .5rem 2%;
+    background-color: lightslategray;
+    color: black;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: black;
+    border-bottom: 1px solid lightslategray;
+    margin-bottom: .4rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: #FFE81F;
+    margin-bottom: .2rem;
+}
+
+main p {
+    padding-bottom: .8rem;
+    line-height: 150%;
+}
+
+main blockquote {
+    font-style: italic;
+    margin: .4rem 2%;
+    font-size: .9rem;
+}
+
+main a {
+    color: #d7283a;
+}
+
+main a:hover {
+    color: #1290cf;
+}
+
+/* --- LISTS --- */
+main ul.check, main ol.bulb {
+    margin: 0 0 .8rem 0;
+    padding: 0 0 0 1rem;
+}
+
+main ul.check {
+    list-style-type: square;
+}
+
+main ol.bulb {
+    list-style-type: circle;
+}
+
+main dl dt {
+    margin: 0;
+    font-weight: 600;
+    padding: 0 0 0 1rem;
+}
+
+main dl dd {
+    margin: 0;
+    padding: 0 0 .75rem 2rem;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
+    color: #FFE81F;
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    
+}
+
+
+
+/* --- OTHER --- */
+div.keepOpen {
+    clear: both;
+}
