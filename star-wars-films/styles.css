@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 main {
   display: contents;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100%;
 }
 header {
   height: 200px;
@@ -60,7 +65,8 @@ nav ul.menu li.active {
 /* --- BODY --- */
 
 body {
-  background-color: slategray;
+  background-color: black;
+  height: 100%;
 }
 #cards {
   width: 100%;

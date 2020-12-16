@@ -37,6 +37,8 @@ const otherCharacters = people.filter((thing) => {
 
 maleButton.addEventListener('click', () => populateDOM(maleCharacters))
 
+/*maleButton.setAttribute('class', 'button')*/
+
 femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
 
 otherButton.addEventListener('click', () => populateDOM(otherCharacters))

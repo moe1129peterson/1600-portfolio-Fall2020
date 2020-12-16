@@ -11,19 +11,6 @@ async function getAPIData(url) {
 
 let pokeArray
 
-// This is doing the same thing as PopulateButton()
-// function loadPage() {
-//     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
-//         (async (data) => {
-//             for (const pokemon of data.results) {
-//                 await getAPIData(pokemon.url).then((pokeData) => {
-//                     populatePokeCard(pokeData)
-//                     //addtoarray(pokeArray, pokeData)
-//                     console.log(pokeArray)
-//                 })
-//             }
-//         })
-// }
 
 // now, use the async getAPIData function
 function PopulateButtons() {
@@ -38,21 +25,6 @@ function PopulateButtons() {
         })
 }
 
-// function LoadTypes() {
-//     getAPIData(`https://pokeapi.co/api/v2/pokemon/ditto`).then
-//         (async (data) => {
-//             for (const pokemon of data.results) {
-//                 await getAPIData(pokemon.url).then((pokeData) => {
-
-//                     //populatePokeCard(pokeData)
-//                     console.log(pokeData)
-//                     //console.log(GetData("text"))
-//                     //let normaltype = pokeData.filter(NormalPokemon => NormalPokemon["type"] == "\u4e00\u822c")
-//                     //console.log(normaltype)
-//                 })
-//             }
-//         })
-// }
 
 function fetchKantoPokemon(){
     fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
@@ -72,22 +44,7 @@ loadButton.addEventListener('click', () => {
     //loadButton.disabled = true
 })
 
-/* mudsDaleButton.addEventListener('click', () => {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon/750`).then
-        (async (data) => {
-            let mudMoves = document.createElement('ul')
-            data.moves.forEach(move => {
-                console.log(move.move.name)
-                let moveItem = document.createElement('li')
-                moveItem.textContent = move.move.name
-                mudMoves.appendChild(moveItem)
-            })
-            let mudImage = document.createElement('img')
-            mudImage.src = `../images/pokemon/750.png`
-            pokemonGrid.appendChild(mudMoves)
-            pokemonGrid.appendChild(mudImage)
-    })
-}) */
+
 
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')

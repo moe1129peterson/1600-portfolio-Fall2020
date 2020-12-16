@@ -3,8 +3,13 @@
     box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 .container {
     display: flex;
+    margin-left: 0;
 }
 
 .main {
@@ -30,7 +35,12 @@ header {
 nav {
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
+    
   }
+
+.menu {
+  display: flex;
+}
 
   nav ul.menu {
     list-style-type: none;
