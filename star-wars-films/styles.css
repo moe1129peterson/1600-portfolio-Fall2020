@@ -92,8 +92,9 @@ figcaption {
 .button {
   color: yellow;
   background-color: rgb(65, 59, 59);
-  margin: 45px;
-  display: flex;
+  margin: 70px;
+  display: inline-block;
+  text-align: center;
   padding: 10px 30px;
   background: -moz-linear-gradient(bottom, black, black 50%, #36d);
 }

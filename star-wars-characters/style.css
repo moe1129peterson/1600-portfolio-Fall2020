@@ -9,12 +9,11 @@ html {
     width: 100%;
 }
 
- header {
+header {
     height: 200px;
     background-color: black;
-    background-image: url(/images/starwarslogo.png);
-    background-position: center;
-    background-size: 450px;
+    background-position: left;
+    background-size: 250px;
     background-repeat: no-repeat;
 }
 
@@ -66,7 +65,7 @@ nav ul.menu li.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 figure {
@@ -80,6 +79,7 @@ figure img {
 button {
     color: yellow;
     background-color: black;
-    margin-right: 12px;
+    margin: 100px;
+    padding: 25px 25px 25px 25px;
   }
 

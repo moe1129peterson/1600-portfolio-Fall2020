@@ -20,7 +20,7 @@ const getMovies = function (array, amt = array.length) {
   };
 };
 
-const callThisThingy = function (id) {
+const callThisThing = function (id) {
   console.log(id.id);
   if(id.id == 'orgTri') {
     getMovies(data, 3);
@@ -30,4 +30,4 @@ const callThisThingy = function (id) {
 };
 
 
-export default callThisThingy;
+export default callThisThing;

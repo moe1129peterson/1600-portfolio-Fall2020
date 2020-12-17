@@ -10,6 +10,7 @@ html {
 .container {
     display: flex;
     margin-left: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .main {
@@ -49,12 +50,14 @@ nav {
   }
 
   nav ul.menu li {
-    
+
   }
 
   nav ul.menu li a {
     display: flexbox;
     padding: .5rem 1.5rem;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
     color: yellow;
     background-color: black;
     text-decoration: none;

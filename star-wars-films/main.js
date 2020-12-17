@@ -17,9 +17,9 @@ function buttonAction(array){
   console.log(array)
 }
 
-CreateButton("Original Trilogy",main,CreateCards,filterTest,3,"button")
+CreateButton("Episodes IV - VI",main,CreateCards,filterTest,3,"button")
 
-CreateButton("All Films",main,CreateCards,filterTest,films.length,"button")
+CreateButton("All Episodes",main,CreateCards,filterTest,films.length,"button")
 
 
 //CreateCards(films,3)
