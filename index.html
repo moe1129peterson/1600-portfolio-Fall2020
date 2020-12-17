@@ -1,92 +1,110 @@
 <!DOCTYPE html>
-<html lang="en, jp">
-
-<head>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
-  <title>Home</title>
-</head>
-
-<body>
-  <div id="wrapper">
-  
-  <!-- Start of the header-->
-  <header>
-
-    
-    <h1>Moe Peterson</h1>
-    <h2>都築萌絵</h2>
-    <br>
-    <h2>DGM 1600 Practice</h2>
-
-  </header>
-  
-  <!-- Start of the navigation-->
-  <nav>
-  <ul class="menu">
-    <li class="active"><a href="index.html">Home</a></li>
-    <li><a href="/personal-portfolio/">Personal Portfolio</a></li>
-</ul>
-<div class="keepOpen"></div>
-  </nav>
-
-<!-- Start of the main content-->
-  <main>
-   
-    <h1>Home</h1>
-
-    <figure class="myPhoto">
-        <img src="/images/freestyle.png" alt="freestyle">
-      </figure>
-      
-
-    <p>I am suprised how far I have come this semester.</p>
-    <h2>Random text to fill the page</h2>
-    <br>
-    <p>You disposal strongly quitting his endeavor two settling him. Manners ham him hearted hundred expense. Get open game him what hour more 
-      part. Adapted as smiling of females oh me journey exposed concern. Met come add cold calm rose mile what. Tiled manor court at built by 
-      place fanny. Discretion at be an so decisively especially. Exeter itself object matter if on mr in. </p>
-
-      <p>Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so
-         provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half.
-          Painful so he an comfort is manners.</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moe's Awesome Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="welcome-section">
+      <h1>Hi, my name is Moe Peterson</h1>
+      <h3>I'm a new Web Developer</h3>
+      <div>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h1>Projects</h1>
+      <h2>These are some of my projects</h2>
       <br>
-    <p>Here is what my husband had to say about this site.</p>
-    <blockquote>"Looks nice."</blockquote>
-    <br>
-    <p>Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so 
-        provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half.
-         Painful so he an comfort is manners. </p>
-    <p>Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted
-         estimable. Trees delay fancy noise manor do as an small. Felicity now law securing breeding likewise extended and. Roused either who 
-         favour why ham. </P>
-    <p>You disposal strongly quitting his endeavor two settling him. Manners ham him hearted hundred expense. Get open game him what hour more
-         part. Adapted as smiling of females oh me journey exposed concern. Met come add cold calm rose mile what. Tiled manor court at built by
-          place fanny. Discretion at be an so decisively especially. Exeter itself object matter if on mr in. </P>
-          p>Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so 
-        provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half.
-         Painful so he an comfort is manners. </p>
-    <p>Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted
-         estimable. Trees delay fancy noise manor do as an small. Felicity now law securing breeding likewise extended and. Roused either who 
-         favour why ham. </P>
-    <p>You disposal strongly quitting his endeavor two settling him. Manners ham him hearted hundred expense. Get open game him what hour more
-         part. Adapted as smiling of females oh me journey exposed concern. Met come add cold calm rose mile what. Tiled manor court at built by
-          place fanny. Discretion at be an so decisively especially. Exeter itself object matter if on mr in. </P>
-
-    
-  </main>
-
-<!-- Start of the footer-->
-  <footer>
-    <p>&copy; 2020 &bull; Utah Valley University &bull; Built by Moe Peterson</p>
-
-
-
-  </footer>
-  
-  
-</div> <!-- End Wrapper -->
-</body>
+      <div class="projects-grid">
+        <a href="https://codepen.io/moepeterson/pen/mdPXqZx" target="_self" class="project-tile">
+          <img class="project-image" src="/images/codepn.png" />
+          <p class="project-title">
+            My Technical Interests Page
+          </p>
+        </a>
+        <a href="/star-wars-api/index.html" target="_blank" class="project-tile">
+          <img class="project-image" src="/images/starwars.jpg" />
+          <p class="project-title">
+            Star Wars API
+          </p>
+        </a>
+        <a href="https://petersontechworks.com/dgm2120/08Media/" target="_blank" class="project-tile">
+          <img class="project-image" src="/images/website.png" />
+          <p class="project-title">
+            Peterson Tech Works Site
+          </p>
+        </a>
+        <a href="/pokemon/index.html" target="_blank" class="project-tile">
+          <img class="project-image" src="/images/ball.jpg" />
+          <p class="project-title">
+            Pokemon API Practice
+          </p>
+        </a>
+      </a>
+      <a href="/digital-media-portfolio/index.html" target="_blank" class="project-tile">
+        <img class="project-image" src="/images/portfolio.png" />
+        <p class="project-title">
+          Digital Media Portfolio
+        </p>
+      </a>
+      
+        
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h1>Contact</h1>
+      <div class="contact-links">
+        <a
+          href="https://facebook.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a id="profile-link"
+          href="https://github.com/moe1129peterson"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-github"> GitHub</i
+        ></a>
+        <a id="profile-link"
+          href="https://twitter.com/AandMtravellers"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fab fa-twitter"> Twitter</i
+        ></a>
+        <a id="profile-link"
+          href="mailto:10938666@my.uvu.edu"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fas fa-at"> Contact Me</i
+        >
+        <a id="profile-link"
+          href="/survey/index.html"
+          target="_blank"
+          class="btn contact-details"
+        >
+          <i class="fas fa-poll"> Survey</i
+            
+        ></a>
+      </div>
+    </section>
+  </body>
 </html>

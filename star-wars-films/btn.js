@@ -2,13 +2,7 @@ import { films } from '../data/films.js';
 
 const data = films.filter((r, a) => r + (a >= 4 && a <= 6), 0);
 
-/*
- * 
- * Raine helped me
- * 
- */
 
-// This does some stuff...
 const getMovies = function (array, amt = array.length) {
   let listContainer = document.getElementById('list-container');
   let oldUl = document.getElementById('list');
