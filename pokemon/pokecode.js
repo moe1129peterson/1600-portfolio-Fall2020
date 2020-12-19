@@ -54,7 +54,6 @@ function populatePokeCard(pokemon) {
     pokeCard.addEventListener('click', () => {
         pokeCard.classList.toggle('is-flipped')
         if (pokeCard.classList.contains('is-flipped')) {
-            console.log('(ノಠ益ಠ)ノ彡┻━┻');
             console.log(pokeCard);
         };
     });
